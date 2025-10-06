@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,22 +14,26 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>AnySafe: Adapting Latent Safety Filters at Runtime by Parameterizing Safety Constraints in the Latent Space</title>
-  
+  <title>AnySafe: Adapting Latent Safety Filters at Runtime by Parameterizing Safety Constraints in the Latent Space
+  </title>
+
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -36,10 +41,10 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -47,7 +52,7 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
@@ -101,171 +106,178 @@
     ]
   }
   </script>
-  
+
 
 </head>
+
 <body>
 
 
 
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-2 publication-title">
-            <span style="color: orange;">AnySafe</span>: Adapting Latent Safety Filters at Runtime by Parameterizing Safety Constraints in the Latent Space
-          </h1>
-            <div class="is-size-4 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                Anonymous Authors<sup></sup>
-              </span>
-              <br><br><br>
-              <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Coming Soon...</span>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <!-- TODO: Replace with your paper title -->
+              <h1 class="title is-2 publication-title">
+                <span style="color: orange;">AnySafe</span>: Adapting Latent Safety Filters at Runtime by Parameterizing
+                Safety Constraints in the Latent Space
+              </h1>
+              <div class="is-size-4 publication-authors">
+                <!-- TODO: Replace with your paper authors and their personal links -->
+                <span class="author-block">
+                  Anonymous Authors<sup></sup>
+                </span>
+                <br><br><br>
+                <div class="is-size-5 publication-authors">
+                  <!-- TODO: Replace with your institution and conference/journal info -->
+                  <span class="author-block">Coming Soon</span>
                 </div>
-                
+
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
-<section class="hero">
-  <div class="container is-max-desktop has-text-centered">
+    <section class="hero">
+      <div class="container is-max-desktop has-text-centered">
 
-    <br>
-    <h2 class="title is-3">AnySafe</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto; max-width:300px;">
-            <img src="static/images/main.png" alt="Main Results" loading="lazy" style="width:100%; height:auto;">
-          </figure>
+        <br>
+        <h2 class="title is-3">AnySafe</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto; max-width:300px;">
+                <img src="static/images/main.png" alt="Main Results" loading="lazy" style="width:100%; height:auto;">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+
+        <br>
+        <h2 class="title is-3">Framework</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto;">
+                <img src="static/images/framework.png" alt="Framework" loading="lazy">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h2 class="title is-3">Dubins Qualitative</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto;">
+                <img src="static/images/dubins_qualitative.png" alt="Dubins qualitative" loading="lazy">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h2 class="title is-3">Dubins Calibration</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto;">
+                <img src="static/images/dubins_calib.png" alt="Dubins calibration" loading="lazy">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h2 class="title is-3">Sweeper Qualitative</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto;">
+                <img src="static/images/sweeper_qualitative.png" alt="Sweeper qualitative" loading="lazy">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h2 class="title is-3">Sweeper Quantitative</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto;">
+                <img src="static/images/sweeper_quantitative.png" alt="Sweeper quantitative" loading="lazy">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h2 class="title is-3">Sweeper Ablation</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto;">
+                <img src="static/images/sweeper_ablation.png" alt="Sweeper ablation" loading="lazy">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h2 class="title is-3">Sweeper Calibration</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="content">
+              <figure class="image" style="margin:0 auto;">
+                <img src="static/images/sweeper_calib.png" alt="Sweeper calibration" loading="lazy">
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    
-    <br>
-    <h2 class="title is-3">Framework</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto;">
-            <img src="static/images/framework.png" alt="Framework" loading="lazy">
-          </figure>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+
+              <p>
+                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                  href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the source code of this website, we just ask that you link back to this page in
+                the footer. <br> This website is licensed under a <a rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                  Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <br>
-    <h2 class="title is-3">Dubins Qualitative</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto;">
-            <img src="static/images/dubins_qualitative.png" alt="Dubins qualitative" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <h2 class="title is-3">Dubins Calibration</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto;">
-            <img src="static/images/dubins_calib.png" alt="Dubins calibration" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <h2 class="title is-3">Sweeper Qualitative</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto;">
-            <img src="static/images/sweeper_qualitative.png" alt="Sweeper qualitative" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <h2 class="title is-3">Sweeper Quantitative</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto;">
-            <img src="static/images/sweeper_quantitative.png" alt="Sweeper quantitative" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <h2 class="title is-3">Sweeper Ablation</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto;">
-            <img src="static/images/sweeper_ablation.png" alt="Sweeper ablation" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <h2 class="title is-3">Sweeper Calibration</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <div class="content">
-          <figure class="image" style="margin:0 auto;">
-            <img src="static/images/sweeper_calib.png" alt="Sweeper calibration" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <!-- Statcounter tracking code -->
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+
+</html>
