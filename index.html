@@ -14,7 +14,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>AnySafe: Adapting Latent Safety Filters at Runtime by Parameterizing Safety Constraints in the Latent Space
+  <title>AnySafe: Adapting Latent Safety Filters at Runtime via Safety Constraint Parameterization in the Latent Space
   </title>
 
   <!-- Favicon and App Icons -->
@@ -42,8 +42,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
 
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts - Optimized loading (Lato to match UNISafe project page) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -58,51 +58,59 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "AnySafe: Adapting Latent Safety Filters at Runtime via Safety Constraint Parameterization in the Latent Space",
+    "description": "Constraint-parameterized latent safety filters that adapt to user-specified safety constraints at runtime via latent-space conditioning and conformal calibration, with experiments on vision-based control with a Franka manipulator.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
+        "name": "Sankalp Agrawal",
+        "affiliation": { "@type": "Organization", "name": "The Ohio State University" }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
+        "name": "Junwon Seo",
+        "affiliation": { "@type": "Organization", "name": "Carnegie Mellon University" }
+      },
+      {
+        "@type": "Person",
+        "name": "Kensuke Nakamura",
+        "affiliation": { "@type": "Organization", "name": "Carnegie Mellon University" }
+      },
+      {
+        "@type": "Person",
+        "name": "Ran Tian",
+        "affiliation": [
+          { "@type": "Organization", "name": "UC Berkeley" },
+          { "@type": "Organization", "name": "NVIDIA Research" }
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Andrea Bajcsy",
+        "affiliation": { "@type": "Organization", "name": "Carnegie Mellon University" }
       }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "IEEE International Conference on Robotics and Automation (ICRA)"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://arxiv.org/abs/2509.19555",
+    "image": "https://YOUR_DOMAIN.com/static/images/main.png",
+    "keywords": ["safety filters", "latent space", "world models", "Hamilton-Jacobi reachability", "conformal calibration", "vision-based control", "robotics", "safe control"],
+    "abstract": "Recent works have shown that foundational safe control methods, such as Hamilton-Jacobi (HJ) reachability analysis, can be applied in the latent space of world models. While this enables the synthesis of latent safety filters for hard-to-model vision-based tasks, they assume that the safety constraint is known a priori and remains fixed during deployment, limiting the safety filter's adaptability across scenarios. To address this, we propose constraint-parameterized latent safety filters that can adapt to user-specified safety constraints at runtime. Our key idea is to define safety constraints by conditioning on an encoding of an image that represents a constraint, using a latent-space similarity measure. The notion of similarity to failure is aligned in a principled way through conformal calibration, which controls how closely the system may approach the constraint representation. The parameterized safety filter is trained entirely within the world model's imagination, treating any image seen by the model as a potential test-time constraint, thereby enabling runtime adaptation to arbitrary safety constraints. In simulation and hardware experiments on vision-based control tasks with a Franka manipulator, we show that our method adapts at runtime by conditioning on the encoding of user-specified constraint images, without sacrificing performance.",
+    "citation": "@inproceedings{agrawal2026anysafe, author = {Agrawal, Sankalp and Seo, Junwon and Nakamura, Kensuke and Tian, Ran and Bajcsy, Andrea}, title = {AnySafe: Adapting Latent Safety Filters at Runtime via Safety Constraint Parameterization in the Latent Space}, booktitle = {IEEE International Conference on Robotics and Automation (ICRA)}, year = {2026} }",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://any-safe.github.io./"
     },
     "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
+      { "@type": "Thing", "name": "Safe control" },
+      { "@type": "Thing", "name": "World models" },
+      { "@type": "Thing", "name": "Reachability analysis" },
+      { "@type": "Thing", "name": "Conformal prediction" }
     ]
   }
   </script>
@@ -121,11 +129,13 @@
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <!-- TODO: Replace with your paper title -->
-              <h1 class="title is-2 publication-title">
-                <span style="color: orange;">AnySafe</span>: Adapting Latent Safety Filters at Runtime by Parameterizing
-                Safety Constraints in the Latent Space
+              <h1 class="title is-1 publication-title">
+                <span style="color: orange;">AnySafe</span>: Adapting Latent Safety Filters at Runtime via Safety Constraint Parameterization in the Latent Space
               </h1>
-              <div class="is-size-4 publication-authors">
+              <div class="is-size-5 publication-venue" style="font-weight: normal;">
+                Accepted to IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>), 2026
+              </div>
+              <div class="is-size-5 publication-authors">
                 <span class="author-block"><a href="https://agrawal-sunny.github.io/" target="_blank">Sankalp
                     Agrawal*</a><sup>1</sup>,</span>
                 <span class="author-block"><a href="https://junwon.me/" target="_blank">Junwon
@@ -146,6 +156,7 @@
               <div class="is-size-10 publication-authors">
                 <span class="eql-cntrb"><sup>*</sup>Indicates Equal Contribution</span>
               </div>
+
               <!-- Supplementary PDF link -->
               <span class="link-block">
                 <span class="link-block">
@@ -162,6 +173,12 @@
                     <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Appendix</span>
+                </a>
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-code"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
                 </a>
               </span>
             </div>
@@ -370,7 +387,17 @@
       </div>
     </section>
 
-
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">BibTeX</h2>
+        <pre class="has-background-light" style="padding: 1rem; overflow-x: auto;"><code>@inproceedings{agrawal2026anysafe,
+  author    = {Agrawal, Sankalp and Seo, Junwon and Nakamura, Kensuke and Tian, Ran and Bajcsy, Andrea},
+  title     = {AnySafe: Adapting Latent Safety Filters at Runtime via Safety Constraint Parameterization in the Latent Space},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2026}
+}</code></pre>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="container">
